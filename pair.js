@@ -75,29 +75,23 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "dark~" + string_session;
+                        let md = "XBOT~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*Hey there, 𝙳𝙰𝚁𝙺-𝙺𝙽𝙸𝙶𝙷𝚃-𝚇𝙼𝙳 user!* 👋🏻
+                        let desc =  `━━━━━━━━━━━━━━ 
+     x ʙᴏᴛ - sᴇssɪᴏɴ 
+    ━━━━━━━━━━━━━━ 
 
-Thanks for using *𝙳𝙰𝚁𝙺-𝙺𝙽𝙸𝙶𝙷𝚃-𝚇𝙼𝙳* — your session has been successfully created!
+🚀 sᴛᴀᴛᴜs: 🟢 ᴄᴏɴɴᴇᴄᴛᴇᴅ ✅
 
-🔐 *Session ID:* Sent above  
-⚠️ *Keep it safe!* Do NOT share this ID with anyone.
+━━━━━━━━━━━━━━━━━━━━
+⚠️  ɪᴍᴘᴏʀᴛᴀɴᴛ ɴᴏᴛɪᴄᴇ  ⚠️
 
-——————
+🛑 ᴛʜɪs ɪs ʏᴏᴜʀ ᴘʀɪᴠᴀᴛᴇ ʟᴏɢɪɴ!
 
-*✅ Stay Updated:*  
-join our official whatsApp channel:  
-https://whatsapp.com/channel/0029VbAM4eo3AzNQZ1WleW3e
-
-*💻 Support Group:*
-join our official whatsApp group:
-https://chat.whatsapp.com/IGgPW6pTrH14oAWCJALYR5?mode=ac_c
-
-——————
-
-> *© Powered by 𝙳𝙰𝚁𝙺-𝙺𝙽𝙸𝙶𝙷𝚃-𝚇𝙼𝙳*
-Stay cool and hack smart. ✌🏻`; 
+🚫 ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ! 
+━━━━━━━━━━━━━━━━━━━━
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴋɪɴᴅᴜ ᴄᴏᴅᴇʀ
+━━━━━━━━━━━━━━━━━━━━`; 
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
@@ -113,27 +107,21 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `Hey there, 𝙳𝙰𝚁𝙺-𝙺𝙽𝙸𝙶𝙷𝚃-𝚇𝙼𝙳 user!* 👋🏻
+                            let desc = `━━━━━━━━━━━━━━ 
+     x ʙᴏᴛ - sᴇssɪᴏɴ 
+    ━━━━━━━━━━━━━━ 
 
-Thanks for using *𝙳𝙰𝚁𝙺-𝙺𝙽𝙸𝙶𝙷𝚃-𝚇𝙼𝙳* — your session has been successfully created!
+🚀 sᴛᴀᴛᴜs: 🟢 ᴄᴏɴɴᴇᴄᴛᴇᴅ ✅
 
-🔐 *Session ID:* Sent above  
-⚠️ *Keep it safe!* Do NOT share this ID with anyone.
+━━━━━━━━━━━━━━━━━━━━
+⚠️  ɪᴍᴘᴏʀᴛᴀɴᴛ ɴᴏᴛɪᴄᴇ  ⚠️
 
-——————
+🛑 ᴛʜɪs ɪs ʏᴏᴜʀ ᴘʀɪᴠᴀᴛᴇ ʟᴏɢɪɴ!
 
-*✅ Stay Updated:*  
-join our official whatsApp channel:  
-https://whatsapp.com/channel/0029VbAM4eo3AzNQZ1WleW3e
-
-*💻 Support Group:*  
-join our official whatsApp group: 
-https://chat.whatsapp.com/IGgPW6pTrH14oAWCJALYR5?mode=ac_c
-
-——————
-
-> *© Powered by 𝙳𝙰𝚁𝙺-𝙺𝙽𝙸𝙶𝙷𝚃-𝚇𝙼𝙳*
-Stay cool and hack smart. ✌🏻`;
+🚫 ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ! 
+━━━━━━━━━━━━━━━━━━━━
+> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴋɪɴᴅᴜ ᴄᴏᴅᴇʀ
+━━━━━━━━━━━━━━━━━━━━`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
